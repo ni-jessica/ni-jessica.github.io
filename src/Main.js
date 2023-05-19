@@ -2,7 +2,7 @@ import "./Main.css";
 import Heading from "./Heading.js";
 import Nav from "./Nav.js";
 import Meetkai from "./meetkai.webp";
-import HackAtBrown from "./hab.png";
+import HackAtBrown from "./hackbrown.png";
 import Stars from "./stars.gif";
 import { SocialIcon } from "react-social-icons";
 
