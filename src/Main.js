@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Main.css";
 import { TypingStep } from "typing-effect-reactjs";
 import MeetkaiGif from "./meetkai.gif";
 import HackAtBrown from "./hab.png";
@@ -37,7 +37,7 @@ const Nav = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-10">
       <div id="show">
-        <ul className="flex text-center md:text-right justify-center md:justify-end items-center bg-[#080357] p-6 shadow-xl opacity-90 text-base">
+        <ul className="flex text-center md:text-right justify-center md:justify-end items-center bg-[#080357] p-6 shadow-xl opacity-90 text-sm sm:text-base">
           <li className="mr-6">
             <a
               className="text-[#F9F7F1] hover:text-[#848089] hover:underline hover:underline-offset-2"
@@ -76,7 +76,8 @@ const Nav = () => {
   );
 };
 
-function App() {
+
+function Main() {
 
   // prevents scrolling on first 10 seconds of load
 
@@ -91,9 +92,9 @@ function App() {
   };
 
   return (
-    <div id="main page" className="App">
+    <div id="main page" className="Main">
       <Nav />
-      <div className="md:h-screen justify-center items-left flex flex-col">
+      <div className="h-screen justify-center items-left flex flex-col">
         <TypeHeading />
         <div id="show">
           <div
@@ -120,8 +121,8 @@ function App() {
         </div>
       </div>
 
-      <div id="show" className="">
-        <div id="background" className="text-base md:text-lg mt-4 mb-32">
+      <div id="show">
+        <div id="background" className="text-base md:text-lg md:mt-4 mb-32">
           <h1 className="text-center md:text-left text-2xl md:text-5xl text-[#848089] ">
             Background
           </h1>
@@ -145,7 +146,7 @@ function App() {
 
                   <ul className="list-disc ml-6">
                     <li>
-                      Full-stack web development on the Metaverse Services Cloud
+                      Full-stack web development for Metaverse Services Cloud
                       platform
                     </li>
                     <li>
@@ -294,4 +295,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
