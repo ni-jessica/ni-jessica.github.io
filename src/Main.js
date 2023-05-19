@@ -1,9 +1,9 @@
 import "./Main.css";
-import Heading from "./Heading.js";
-import Nav from "./Nav.js";
-import Meetkai from "./meetkai.webp";
-import HackAtBrown from "./hackbrown.png";
-import Stars from "./stars.gif";
+import Heading from "./components/Heading.js";
+import Nav from "./components/Nav.js";
+import Meetkai from "./components/meetkai.webp";
+import HackAtBrown from "./components/hackbrown.png";
+import Stars from "./components/stars.gif";
 import { SocialIcon } from "react-social-icons";
 
 function Main() {
