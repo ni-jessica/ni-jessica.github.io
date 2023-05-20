@@ -208,60 +208,57 @@ function Main() {
   };
 
   const Projects = () => {
+    const boxFormat = "relative box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300"
+
     return (
       <div id="projects">
-        <h1 className="text-2xl md:text-5xl text-center md:text-left text-[#848089]- text-[#0C058A] mt-12">
+        <h1 className="text-2xl md:text-5xl text-center md:text-left text-[#0C058A] mt-12">
           Projects
         </h1>
         <div className="pt-8 grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-8  text-[#31493b] text-center md:text-left">
-          <div className="box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300">
+          <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Caching I/O</p>
-            <p className="my-6 text-base md:text-xl">
-              Implemented single slot cache to reduce system calls and increase
-              efficiency for buffered read and write.
+            <p className="pt-6 pb-12 text-base md:text-xl">
+            Implemented single slot cache to reduce system calls and optimize performance for buffered read and write.
             </p>
-            <p>Languages: C</p>
+            <p className="absolute pt-6 bottom-8">C</p>
           </div>
-          <div className="box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300">
-            <p className="text-lg md:text-2xl font-semibold">Weensy OS</p>
-            <p className="my-6 text-base md:text-xl">
-              Implemented single slot cache to reduce system calls and increase
-              efficiency for buffered read and write.
+          <div className={boxFormat}>
+            <p className="text-lg md:text-2xl font-semibold">WeensyOS</p>
+            <p className="pt-6 pb-12 text-base md:text-xl">
+              Programmed virtual memory architecture in kernel code, including pagetables and fork process isolation, in a minature operating system: WeensyOS.
             </p>
-            <p>Languages: C</p>
+            <p className="absolute bottom-8">C++</p>
           </div>
-          <div className="box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300">
+          <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Dorms at Brown</p>
-            <p className="my-6 text-base md:text-xl">
-              Implemented single slot cache to reduce system calls and increase
-              efficiency for buffered read and write.
+            <p className="pt-6 pb-12 text-base md:text-xl">
+              Engineered and designed web app for Brown University dorms that authenticates users, handles reviews, and ranks/filters based on reviews.
             </p>
-            <p>Languages: C</p>
+            <p className="absolute bottom-8">Typescript, React, Node, HTML, CSS, Firebase</p>
           </div>
-          <div className="box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300">
+          <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Maps</p>
-            <p className="my-6 text-base md:text-xl">
-              Implemented single slot cache to reduce system calls and increase
-              efficiency for buffered read and write.
+            <p className="pt-6 pb-12 text-base md:text-xl">
+              Used MapBox API and public redlining data to visualize history of inequality throughout US cities. Supports bounding box querying to filter data.
             </p>
-            <p>Languages: C</p>
+            <p className="absolute bottom-8"> Java, Typescript, HTML, CSS</p>
           </div>
-          <div className="box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300">
+          <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Search</p>
-            <p className="my-6 text-base md:text-xl">
-              Implemented single slot cache to reduce system calls and increase
-              efficiency for buffered read and write.
+            <p className="pt-6 pb-12 text-base md:text-xl">
+              Created basic search engine that indexes a set of wiki files and ranks results based on TF-IDF and PageRank algorithms.
             </p>
-            <p>Languages: C</p>
+            <p className="absolute bottom-8">Python</p>
           </div>
-          <div className="box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300">
+          <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">
               Personal Website
             </p>
-            <p className="my-6 text-base md:text-xl">
+            <p className="pt-6 pb-12 text-base md:text-xl">
               What you're on right now!
             </p>
-            <p>Languages: Javascript, React, HTML, CSS</p>
+            <p className="absolute bottom-8">Javascript, React, HTML, CSS</p>
           </div>
         </div>
       </div>
@@ -270,12 +267,12 @@ function Main() {
 
   const Contact = () => {
     return (
-      <div id="contact" className="mt-24 text-center">
+      <div id="contact" className="my-24 text-center">
         <h1 className="text-2xl md:text-5xl text-center text-[#0C058A] mt-12">
           Contact Info
         </h1>
         <div className="mt-6">
-          <p className="text-lg md:text-2xl">Let's connect {"\u{1F60A}"}</p>
+          <p className="text-lg md:text-2xl">Let's connect!</p>
           <ul className="mt-6 space-x-12 flex flex-row justify-center text-base md:text-lg">
             <li>
               <SocialIcon
@@ -307,6 +304,7 @@ function Main() {
     );
   };
 
+
   return (
     <div id="main page" className="Main">
       <Nav />
@@ -314,6 +312,7 @@ function Main() {
       <Background />
       <Projects />
       <Contact />
+      <div className="align-bottom text-center">created by Jessica Ni | updated 2023</div>
     </div>
   );
 }
