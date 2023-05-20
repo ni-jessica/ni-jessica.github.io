@@ -8,10 +8,10 @@ import { SocialIcon } from "react-social-icons";
 
 function Main() {
   // prevents scrolling on first 10 seconds of load
-  // document.body.setAttribute("style", "overflow:hidden;");
-  // setTimeout(function () {
-  //   document.body.setAttribute("style", "overflow:visible;");
-  // }, 10000);
+  document.body.setAttribute("style", "overflow:hidden;");
+  setTimeout(function () {
+    document.body.setAttribute("style", "overflow:visible;");
+  }, 10000);
 
   // refreshing will bring user back to top of page
   window.onbeforeunload = function () {
