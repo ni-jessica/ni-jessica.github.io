@@ -8,10 +8,10 @@ import { SocialIcon } from "react-social-icons";
 
 function Main() {
   // prevents scrolling on first 10 seconds of load
-  document.body.setAttribute("style", "overflow:hidden;");
-  setTimeout(function () {
-    document.body.setAttribute("style", "overflow:visible;");
-  }, 10000);
+  // document.body.setAttribute("style", "overflow:hidden;");
+  // setTimeout(function () {
+  //   document.body.setAttribute("style", "overflow:visible;");
+  // }, 10000);
 
   // refreshing will bring user back to top of page
   window.onbeforeunload = function () {
@@ -215,41 +215,41 @@ function Main() {
         <h1 className="text-2xl md:text-5xl text-center md:text-left text-[#0C058A] mt-12">
           Projects
         </h1>
-        <div className="pt-8 grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-8  text-[#31493b] text-center md:text-left">
+        <div className="pt-8 grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-8 text-[#31493b] text-center md:text-left">
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Caching I/O</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
             Implemented single slot cache to reduce system calls and optimize performance for buffered read and write.
             </p>
-            <p className="absolute pt-6 bottom-8">C</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">C</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">WeensyOS</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
               Programmed virtual memory architecture in kernel code, including pagetables and fork process isolation, in a minature operating system: WeensyOS.
             </p>
-            <p className="absolute bottom-8">C++</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">C++</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Dorms at Brown</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-              Engineered and designed web app for Brown University dorms that authenticates users, handles reviews, and ranks/filters based on reviews.
+              Engineered and designed web app for Brown University dorms that authenticates users, handles reviews, and ranks based on reviews.
             </p>
-            <p className="absolute bottom-8">Typescript, React, Node, HTML, CSS, Firebase</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">Typescript, React, Node, HTML, CSS, Firebase</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Maps</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
               Used MapBox API and public redlining data to visualize history of inequality throughout US cities. Supports bounding box querying to filter data.
             </p>
-            <p className="absolute bottom-8"> Java, Typescript, HTML, CSS</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8"> Java, Typescript, HTML, CSS</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Search</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
               Created basic search engine that indexes a set of wiki files and ranks results based on TF-IDF and PageRank algorithms.
             </p>
-            <p className="absolute bottom-8">Python</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">Python</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">
@@ -258,7 +258,7 @@ function Main() {
             <p className="pt-6 pb-12 text-base md:text-xl">
               What you're on right now!
             </p>
-            <p className="absolute bottom-8">Javascript, React, HTML, CSS</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">Javascript, React, HTML, CSS</p>
           </div>
         </div>
       </div>
