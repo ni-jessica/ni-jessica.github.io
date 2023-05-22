@@ -55,8 +55,7 @@ function Main() {
               system security.
             </p>
             <p>
-              {"\u2794 "} My other interests include ethical AI, film,
-              photography, and culinary!
+              {"\u2794 "} My other interests include ethical AI, photography, film, and culinary!
             </p>
           </div>
         </div>
@@ -81,16 +80,23 @@ function Main() {
                 Meetkai: Software Engineer Intern
               </p>
               <p className="text-sm md:text-base text-[#7A0050] -mt-1">
-                Languages & Tools used: Javascript, React, Node.js, HTML, CSS,
-                TailwindCSS, AWS, Prisma Client, Jest, Docker
+                Languages & Tools: JavaScript, React, Node.js, HTML, CSS,
+                TailwindCSS, Prisma Client, Docker
               </p>
 
               <div className="pt-2">
+                <p className="font-semibold"> Summer 2023:</p>
+                <ul className="list-disc ml-6">
+                  <li>Metaverse engineering team</li>
+                </ul>
+              </div>
+
+              <div className="pt-2 pb-6">
                 <p className="font-semibold"> Summer 2022:</p>
 
                 <ul className="list-disc ml-6">
                   <li>
-                    Full-stack web development for Metaverse Services Cloud
+                    Full-stack web development for Metaverse Services cloud
                     platform
                   </li>
                   <li>
@@ -103,19 +109,12 @@ function Main() {
                   </li>
                   <li>
                     Worked with mock data to prototype and test nonplayable
-                    character (NPC) product feature
+                    character (NPC) chat product feature
                   </li>
                   <li>
                     Continued part-time until November 2022 helping with
                     miscellaneous updates and bug-fixes
                   </li>
-                </ul>
-              </div>
-
-              <div className="pt-2 pb-6">
-                <p className="font-semibold"> Summer 2023:</p>
-                <ul className="list-disc ml-6">
-                  <li>Returning to work on more awesome projects! </li>
                 </ul>
               </div>
             </div>
@@ -165,27 +164,12 @@ function Main() {
                 Hack at Brown
               </p>
               <div className="pt-2">
-                <p className="font-semibold">2022-2023: Sponsorship Lead</p>
-                <ul className="list-disc ml-6">
-                  <li>Led team of 6 to acquire funding for 2023 hackathon </li>
-                  <li>
-                    Communicated and fostered relationships with companies to
-                    secure sponsor partnerships
-                  </li>
-                  <li>
-                    Organized team resources and directed weekly team meetings
-                  </li>
-                  <li>
-                    Collaborated with other teams to maintain progress across
-                    whole organization
-                  </li>
-                </ul>
                 <p className="pt-2 font-semibold">
                   2023-2024: Development Team
                 </p>
                 <ul className="list-disc ml-6">
                   <li>
-                    Working with team to engineer website for Hack at Brown 2024{" "}
+                    Creating website for Hack at Brown 2024{" "}
                   </li>
                   <li>
                     Check out 2023's iteration{" "}
@@ -199,6 +183,21 @@ function Main() {
                     </a>
                   </li>
                 </ul>
+                <p className="font-semibold">2022-2023: Sponsorship Lead</p>
+                <ul className="list-disc ml-6">
+                  <li>Led team of 6 to acquire funding for 2023 hackathon </li>
+                  <li>
+                    Communicated and fostered relationships with companies to
+                    secure sponsor partnerships
+                  </li>
+                  <li>
+                    Organized team resources and directed team meetings
+                  </li>
+                  <li>
+                    Collaborated with other teams to maintain progress across
+                    whole organization
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -208,7 +207,8 @@ function Main() {
   };
 
   const Projects = () => {
-    const boxFormat = "relative box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300"
+    const boxFormat =
+      "relative box bg-[#DCD8D0] rounded-lg px-6 py-8 shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300";
 
     return (
       <div id="projects">
@@ -219,35 +219,47 @@ function Main() {
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Caching I/O</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-            Implemented single slot cache to reduce system calls and optimize performance for buffered read and write.
+              Implemented single slot cache to reduce system calls and optimize
+              performance for buffered read and write.
             </p>
             <p className="absolute left-0 md:left-6 w-full bottom-8">C</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">WeensyOS</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-              Programmed virtual memory architecture in kernel code, including pagetables and fork process isolation, in a minature operating system: WeensyOS.
+              Programmed virtual memory architecture in kernel code, including
+              pagetables and fork process isolation, in a minature operating
+              system: WeensyOS.
             </p>
             <p className="absolute left-0 md:left-6 w-full bottom-8">C++</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Dorms at Brown</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-              Engineered and designed web app for Brown University dorms that authenticates users, handles reviews, and ranks based on reviews.
+              Engineered and designed web app for Brown University dorms that
+              authenticates users, handles reviews, and ranks based on reviews.
             </p>
-            <p className="absolute left-0 md:left-6 w-full bottom-8">Typescript, React, Node, HTML, CSS, Firebase</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">
+              Typescript, React, Node, HTML, CSS, Firebase
+            </p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Maps</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-              Used MapBox API and public redlining data to visualize history of inequality throughout US cities. Supports bounding box querying to filter data.
+              Used MapBox API and public redlining data to visualize history of
+              inequality throughout US cities. Supports bounding box querying to
+              filter data.
             </p>
-            <p className="absolute left-0 md:left-6 w-full bottom-8"> Java, Typescript, HTML, CSS</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">
+              {" "}
+              Java, Typescript, HTML, CSS
+            </p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Search</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-              Created basic search engine that indexes a set of wiki files and ranks results based on TF-IDF and PageRank algorithms.
+              Created basic search engine that indexes a set of wiki files and
+              ranks results based on TF-IDF and PageRank algorithms.
             </p>
             <p className="absolute left-0 md:left-6 w-full bottom-8">Python</p>
           </div>
@@ -258,7 +270,9 @@ function Main() {
             <p className="pt-6 pb-12 text-base md:text-xl">
               What you're on right now!
             </p>
-            <p className="absolute left-0 md:left-6 w-full bottom-8">Javascript, React, HTML, CSS</p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">
+              Javascript, React, HTML, CSS
+            </p>
           </div>
         </div>
       </div>
@@ -304,7 +318,6 @@ function Main() {
     );
   };
 
-
   return (
     <div id="main page" className="Main">
       <Nav />
@@ -312,7 +325,9 @@ function Main() {
       <Background />
       <Projects />
       <Contact />
-      <div className="align-bottom text-center">created by Jessica Ni | updated 2023</div>
+      <div className="align-bottom text-center">
+        created by Jessica Ni | updated 2023
+      </div>
     </div>
   );
 }
