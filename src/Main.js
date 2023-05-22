@@ -1,7 +1,7 @@
 import "./Main.css";
 import Heading from "./components/Heading.js";
 import Nav from "./components/Nav.js";
-import Meetkai from "./components/meetkai.webp";
+import Meetkai from "./components/meetkai.png";
 import HackAtBrown from "./components/hackbrown.png";
 import Stars from "./components/stars.gif";
 import { SocialIcon } from "react-social-icons";
