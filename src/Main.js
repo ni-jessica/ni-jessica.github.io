@@ -164,7 +164,7 @@ function Main() {
                 Hack at Brown
               </p>
               <div className="pt-2">
-                <p className="pt-2 font-semibold">
+                <p className="font-semibold">
                   2023-2024: Development Team
                 </p>
                 <ul className="list-disc ml-6">
@@ -183,7 +183,7 @@ function Main() {
                     </a>
                   </li>
                 </ul>
-                <p className="font-semibold">2022-2023: Sponsorship Lead</p>
+                <p className="pt-2 font-semibold">2022-2023: Sponsorship Lead</p>
                 <ul className="list-disc ml-6">
                   <li>Led team of 6 to acquire funding for 2023 hackathon </li>
                   <li>
