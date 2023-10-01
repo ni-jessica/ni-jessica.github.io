@@ -46,16 +46,17 @@ function Main() {
               About Me
             </h1>
             <p className="md:pt-4">
-              {"\u2794 "} I'm a rising junior at Brown University studying
-              Applied Math and Computer Science.
+              {"\u2794 "} I'm a junior at Brown University
+              studying Applied Math and Computer Science.
             </p>
             <p>
-              {"\u2794 "} I have experience in full-stack software engineering,
-              and my career interests primarily lie in machine learning and
-              system security.
+              {"\u2794 "} I have experience in full-stack software
+              engineering, and my career interests primarily lie in
+              computer systems and data management.
             </p>
             <p>
-              {"\u2794 "} My other interests include ethical AI, photography, film, and culinary!
+              {"\u2794 "} My other interests include data privacy,
+              photography, film, and trying new foods!
             </p>
           </div>
         </div>
@@ -65,7 +66,10 @@ function Main() {
 
   const Background = () => {
     return (
-      <div id="background" className="text-base md:text-lg md:mt-4 mb-32">
+      <div
+        id="background"
+        className="text-base md:text-lg md:mt-4 mb-32"
+      >
         <h1 className="text-center md:text-left text-2xl md:text-5xl text-[#0C058A] ">
           Background
         </h1>
@@ -75,45 +79,52 @@ function Main() {
               <h2 className="text-xl md:text-3xl pt-6 text-[#7A0050] ">
                 Work Experience
               </h2>
-
               <p className="pt-4 font-semibold text-base md:text-xl text-[#7A0050]">
                 Meetkai: Software Engineer Intern
               </p>
               <p className="text-sm md:text-base text-[#7A0050] -mt-1">
-                Languages & Tools: JavaScript, React, Node.js, HTML, CSS,
-                TailwindCSS, Prisma Client, Docker
+                Languages & Tools: JavaScript, React, Node.js, HTML,
+                CSS, TailwindCSS, Prisma Client, Docker
               </p>
 
               <div className="pt-2">
                 <p className="font-semibold"> Summer 2023:</p>
+                <p>Metaverse engineering team:</p>
                 <ul className="list-disc ml-6">
-                  <li>Metaverse engineering team</li>
+                  <li>
+                    Streamlined end-to-end integration testing
+                    workflow using GitHub actions.
+                  </li>
+                  <li>
+                    Planned and programmed in-world asset search
+                    feature with filter and sort.
+                  </li>
+                  <li>
+                    Improved upon tech stack by converting frontend
+                    codebase to React and incorporating best
+                    practices.
+                  </li>
                 </ul>
               </div>
 
               <div className="pt-2 pb-6">
                 <p className="font-semibold"> Summer 2022:</p>
-
+                <p>
+                  Full-stack web development for Metaverse Services
+                  cloud platform:
+                </p>
                 <ul className="list-disc ml-6">
                   <li>
-                    Full-stack web development for Metaverse Services cloud
-                    platform
+                    Implemented UI/UX design for site-wide components,
+                    webpages, and primary user-dashboard
                   </li>
                   <li>
-                    Implemented UI/UX design for site-wide components, webpages,
-                    and primary user-dashboard
+                    Connected backend API and database to dynamically
+                    display data on frontend
                   </li>
                   <li>
-                    Connected backend API and database to dynamically display
-                    data on frontend
-                  </li>
-                  <li>
-                    Worked with mock data to prototype and test nonplayable
-                    character (NPC) chat product feature
-                  </li>
-                  <li>
-                    Continued part-time until November 2022 helping with
-                    miscellaneous updates and bug-fixes
+                    Worked with mock data to prototype and test
+                    nonplayable character (NPC) chat product feature
                   </li>
                 </ul>
               </div>
@@ -168,9 +179,7 @@ function Main() {
                   2023-2024: Development Team
                 </p>
                 <ul className="list-disc ml-6">
-                  <li>
-                    Creating website for Hack at Brown 2024{" "}
-                  </li>
+                  <li>Creating website for Hack at Brown 2024 </li>
                   <li>
                     Check out 2023's iteration{" "}
                     <a
@@ -183,19 +192,25 @@ function Main() {
                     </a>
                   </li>
                 </ul>
-                <p className="pt-2 font-semibold">2022-2023: Sponsorship Lead</p>
+                <p className="pt-2 font-semibold">
+                  2022-2023: Sponsorship Lead
+                </p>
                 <ul className="list-disc ml-6">
-                  <li>Led team of 6 to acquire funding for 2023 hackathon </li>
                   <li>
-                    Communicated and fostered relationships with companies to
-                    secure sponsor partnerships
+                    Led team of 6 to acquire $15,000 in funding for
+                    2023 hackathon{" "}
                   </li>
                   <li>
-                    Organized team resources and directed team meetings
+                    Communicated and fostered relationships with
+                    companies to secure sponsor partnerships
                   </li>
                   <li>
-                    Collaborated with other teams to maintain progress across
-                    whole organization
+                    Organized team resources and directed team
+                    meetings
+                  </li>
+                  <li>
+                    Collaborated with other teams to maintain progress
+                    across whole organization
                   </li>
                 </ul>
               </div>
@@ -217,27 +232,52 @@ function Main() {
         </h1>
         <div className="pt-8 grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-8 text-[#31493b] text-center md:text-left">
           <div className={boxFormat}>
-            <p className="text-lg md:text-2xl font-semibold">Caching I/O</p>
-            <p className="pt-6 pb-12 text-base md:text-xl">
-              Implemented single slot cache to reduce system calls and optimize
-              performance for buffered read and write.
+            <p className="text-lg md:text-2xl font-semibold">
+              Snowcast
             </p>
-            <p className="absolute left-0 md:left-6 w-full bottom-8">C</p>
+            <p className="pt-6 pb-12 text-base md:text-xl">
+              Created miniature radio station using server that could
+              handle multiple TCP client connections and manage
+              stations that streamed UDP file data to clients
+              connecting through input arguments.
+            </p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">
+              Go
+            </p>
           </div>
           <div className={boxFormat}>
-            <p className="text-lg md:text-2xl font-semibold">WeensyOS</p>
-            <p className="pt-6 pb-12 text-base md:text-xl">
-              Programmed virtual memory architecture in kernel code, including
-              pagetables and fork process isolation, in a minature operating
-              system: WeensyOS.
+            <p className="text-lg md:text-2xl font-semibold">
+              Caching I/O
             </p>
-            <p className="absolute left-0 md:left-6 w-full bottom-8">C++</p>
+            <p className="pt-6 pb-12 text-base md:text-xl">
+              Implemented single slot cache to reduce system calls and
+              optimize performance for buffered read and write.
+            </p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">
+              C
+            </p>
           </div>
           <div className={boxFormat}>
-            <p className="text-lg md:text-2xl font-semibold">Dorms at Brown</p>
+            <p className="text-lg md:text-2xl font-semibold">
+              WeensyOS
+            </p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-              Engineered and designed web app for Brown University dorms that
-              authenticates users, handles reviews, and ranks based on reviews.
+              Programmed virtual memory architecture in kernel code,
+              including pagetables and fork process isolation, in a
+              minature operating system: WeensyOS.
+            </p>
+            <p className="absolute left-0 md:left-6 w-full bottom-8">
+              C++
+            </p>
+          </div>
+          <div className={boxFormat}>
+            <p className="text-lg md:text-2xl font-semibold">
+              Dorms at Brown
+            </p>
+            <p className="pt-6 pb-12 text-base md:text-xl">
+              Engineered and designed web app for Brown University
+              dorms that authenticates users, handles reviews, and
+              ranks based on reviews.
             </p>
             <p className="absolute left-0 md:left-6 w-full bottom-8">
               Typescript, React, Node, HTML, CSS, Firebase
@@ -246,22 +286,14 @@ function Main() {
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">Maps</p>
             <p className="pt-6 pb-12 text-base md:text-xl">
-              Used MapBox API and public redlining data to visualize history of
-              inequality throughout US cities. Supports bounding box querying to
-              filter data.
+              Used MapBox API and public redlining data to visualize
+              history of inequality throughout US cities. Supports
+              bounding box querying to filter data.
             </p>
             <p className="absolute left-0 md:left-6 w-full bottom-8">
               {" "}
               Java, Typescript, HTML, CSS
             </p>
-          </div>
-          <div className={boxFormat}>
-            <p className="text-lg md:text-2xl font-semibold">Search</p>
-            <p className="pt-6 pb-12 text-base md:text-xl">
-              Created basic search engine that indexes a set of wiki files and
-              ranks results based on TF-IDF and PageRank algorithms.
-            </p>
-            <p className="absolute left-0 md:left-6 w-full bottom-8">Python</p>
           </div>
           <div className={boxFormat}>
             <p className="text-lg md:text-2xl font-semibold">
@@ -326,7 +358,7 @@ function Main() {
       <Projects />
       <Contact />
       <div className="align-bottom text-center">
-        created by Jessica Ni | updated 2023
+        created by Jessica Ni | updated October 2023
       </div>
     </div>
   );
