@@ -1,6 +1,6 @@
-const Nav = () => {
+const Navbar = () => {
     return (
-      <nav className="fixed top-0 left-0 w-full z-10">
+      <div className="fixed top-0 left-0 w-full z-10">
         <div id="show">
           <ul className="flex text-center md:text-right justify-center md:justify-end items-center bg-[#080357] p-6 shadow-xl text-sm sm:text-base">
             <li className="mr-6">
@@ -37,8 +37,8 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
     );
   };
 
-  export default Nav;
+  export default Navbar;

@@ -1,19 +1,18 @@
-import "./Main.css";
-import Heading from "./components/Heading.js";
-import Nav from "./components/Nav.js";
-import Meetkai from "./components/meetkai.png";
-import HackAtBrown from "./components/hackbrown.png";
-import Stars from "./components/stars.gif";
+import Navbar from "./components/navbar";
+import TypeHeading from "./components/header";
+import Meetkai from "./images/meetkai.png";
+import HackatBrown from "./images/hackbrown.png";
+import Stars from "./images/stars.gif";
 import { SocialIcon } from "react-social-icons";
 
-function Main() {
-  // prevents scrolling on first 10 seconds of load
+function App() {
+  // prevent scrolling on first 10 seconds of load
   document.body.setAttribute("style", "overflow:hidden;");
   setTimeout(function () {
     document.body.setAttribute("style", "overflow:visible;");
   }, 10000);
 
-  // refreshing will bring user back to top of page
+  // refresh brings user back to top of page
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
@@ -23,7 +22,7 @@ function Main() {
       <div className="h-screen justify-center flex flex-col">
         <div className="grid grid-flow-row md:grid-flow-col">
           <div>
-            <Heading />
+            <TypeHeading />
           </div>
           <div
             id="show"
@@ -46,8 +45,8 @@ function Main() {
               About Me
             </h1>
             <p className="md:pt-4">
-              {"\u2794 "} I'm a junior at Brown University
-              studying Applied Math and Computer Science.
+              {"\u2794 "} I'm a junior at Brown University studying
+              Applied Math and Computer Science.
             </p>
             <p>
               {"\u2794 "} I have experience in full-stack software
@@ -160,7 +159,7 @@ function Main() {
               >
                 <div className="shadow-lg hover:shadow-xl hover:scale-[1.03] transition duration-300 rounded-lg overflow-hidden max-w-[40rem] ">
                   <img
-                    src={HackAtBrown}
+                    src={HackatBrown}
                     alt="hack at brown logo"
                     className="max-h-[24rem] object-cover"
                   ></img>
@@ -351,8 +350,8 @@ function Main() {
   };
 
   return (
-    <div id="main page" className="Main">
-      <Nav />
+    <div className="app">
+      <Navbar />
       <Welcome />
       <Background />
       <Projects />
@@ -364,4 +363,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default App;
