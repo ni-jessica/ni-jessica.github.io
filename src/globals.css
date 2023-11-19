@@ -2,53 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.app {
-  min-height: 100vh;
-  padding-left: 10vh;
-  padding-right: 10vh;
-  padding-top: 12vh;
-  padding-bottom: 4vh;
-  background-color: #F9F7F1;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-@media screen and (min-width: 300px) and (max-width: 768px) {
-  .app {
-      padding-right: 8vw;
-      padding-left: 8vw;
-  }
-}
-
-[id]::before {
-  content: '';
-  display: block;
-  height:      80px;
-  margin-top: -80px;
-  visibility: hidden;
-}
-
-#show {
-  opacity: 0;
-  animation: fadeIn 3s forwards;
-  animation-delay: 9s;
-  -webkit-animation: fadeIn 3s forwards;
-  -webkit-animation-delay: 9s;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -140,8 +93,48 @@ code {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-muted text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-top: 12vh;
+  padding-bottom: 4vh;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .app {
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+}
+
+[id]::before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+#show {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 8s;
+  -webkit-animation: fadeIn 3s forwards;
+  -webkit-animation-delay: 8s;
+}
