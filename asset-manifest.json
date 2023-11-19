@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.523a601d.css",
-    "main.js": "/static/js/main.0f1b703d.js",
-    "static/media/hackbrown.png": "/static/media/hackbrown.88a7ca5d1bbf69c2f4ba.png",
-    "static/media/meetkai.png": "/static/media/meetkai.fbea73a698fe035e7d5a.png",
+    "main.css": "/static/css/main.e0b0eab0.css",
+    "main.js": "/static/js/main.646041ce.js",
     "index.html": "/index.html",
-    "main.523a601d.css.map": "/static/css/main.523a601d.css.map",
-    "main.0f1b703d.js.map": "/static/js/main.0f1b703d.js.map"
+    "main.e0b0eab0.css.map": "/static/css/main.e0b0eab0.css.map",
+    "main.646041ce.js.map": "/static/js/main.646041ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.523a601d.css",
-    "static/js/main.0f1b703d.js"
+    "static/css/main.e0b0eab0.css",
+    "static/js/main.646041ce.js"
   ]
 }
