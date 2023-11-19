@@ -2,7 +2,7 @@ import { SocialIcon } from "react-social-icons";
 
 export const Contact = () => {
     return (
-      <div id="contact" className="my-24 text-center">
+      <div id="contact" className="mt-6 sm:mt-24 mb-24 text-center">
         <h1 className="text-4xl md:text-7xl text-center font-extrabold text-[#0C058A] mt-12">
           Contact Info
         </h1>

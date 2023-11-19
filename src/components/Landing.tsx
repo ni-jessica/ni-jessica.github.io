@@ -34,7 +34,7 @@ export const Landing = () => {
         </div>
         <div
           id="show"
-          className="md:-mt-4 lg:-mt-4 inline-flex max-h-[8rem] md:max-h-[16rem] xl:max-h-[16rem]"
+          className="mt-4 md:-mt-4 inline-flex max-h-[8rem] md:max-h-[16rem] xl:max-h-[16rem]"
         >
           <img
             src={Stars}
@@ -47,9 +47,9 @@ export const Landing = () => {
       <div id="show">
         <div
           id="about"
-          className="text-center space-y-2 text-base sm:text-lg pb-24"
+          className="text-center space-y-2 text-base sm:text-lg mb-24"
         >
-          <h1 className="text-4xl md:text-7xl font-extrabold mt-24 md:mt-10 text-[#0C058A] ">
+          <h1 className="text-4xl md:text-7xl font-extrabold mt-12 md:mt-10 text-[#0C058A] ">
             About Me
           </h1>
           <div className="md:pt-4">

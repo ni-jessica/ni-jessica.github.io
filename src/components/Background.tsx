@@ -1,10 +1,10 @@
 export const Background = () => {
   return (
-    <div id="background" className="md:mt-4 mb-32">
+    <div id="background" className="sm:mt-4 sm:mb-32">
       <h1 className="text-center text-4xl md:text-7xl font-extrabold text-[#0C058A] ">
         Background
       </h1>
-      <div className="lg:w-3/5 md:m-auto sm:pl-4 pt-12 md:pt-16">
+      <div className="lg:w-3/5 md:m-auto pl-5 pt-12 md:pt-16">
         <ol className="relative border-s-2 border-muted-foreground">
           <li className="mb-16 ms-7 md:ms-9">
             <span className="absolute flex items-center justify-center w-9 h-9 bg-[#DDDBF1]  rounded-full -start-5  dark:bg-[#0C058A]">

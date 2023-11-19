@@ -8,12 +8,12 @@ import {
 import { cn } from "./utils";
 import { CircleIcon } from "@radix-ui/react-icons";
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
-import HeadphonesIcon from '@mui/icons-material/Headphones';
-import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
-import DescriptionIcon from '@mui/icons-material/Description';
-import MemoryIcon from '@mui/icons-material/Memory';
-import MapIcon from '@mui/icons-material/Map';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import HeadphonesIcon from "@mui/icons-material/Headphones";
+import MapsHomeWorkIcon from "@mui/icons-material/MapsHomeWork";
+import DescriptionIcon from "@mui/icons-material/Description";
+import MemoryIcon from "@mui/icons-material/Memory";
+import MapIcon from "@mui/icons-material/Map";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const RadioGroup = forwardRef<
   React.ElementRef<typeof RadioGroupPrimitive.Root>,
@@ -41,13 +41,10 @@ const RadioGroupItem = forwardRef<
         className
       )}
       {...props}
-    >
-    </RadioGroupPrimitive.Item>
+    ></RadioGroupPrimitive.Item>
   );
 });
 RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
-
-
 
 interface ProjectProps {
   title: string;
@@ -102,8 +99,9 @@ const projectInfo: Record<string, ProjectProps> = {
   personal: {
     title: "Personal Website",
     icon: <FavoriteIcon />,
-    description: "What you're on right now \u263a Thanks for stopping by!",
-    languages: ["Javascript", "React", "HTML", "CSS"],
+    description:
+      "What you're on right now \u263a Thanks for stopping by!",
+    languages: ["Typescript", "React", "HTML", "CSS"],
   },
 };
 
@@ -121,52 +119,49 @@ export function Projects() {
 
   return (
     <div id="projects">
-      <div className="mt-12">
-        <div className="flex flex-col space-y-1.5 p-6">
-          <h1 className="text-4xl md:text-7xl text-center font-extrabold mb-8 text-[#0C058A]">
-            Projects
-          </h1>
-        </div>
-        <div className="grid grid-flow-row gap-6 p-6 pt-0">
-          <div className="grid gap-6">
-            <RadioGroup
-              defaultValue="snowcast"
-              className="grid grid-flow-row md:grid-rows-2 md:grid-cols-2 gap-4"
-            >
-              {projects.map((name) => (
-                <div>
-                  <RadioGroupItem
-                    value={name}
-                    id={name}
-                    className="peer sr-only "
-                    onClick={() => setProject(name)}
-                  />
-                  <label htmlFor={name} className="font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-col items-center justify-between rounded-lg border-2 border-[#DDDBF1] bg-[#DDDBF1] p-4 text-xl md:text-2xl peer-data-[state=checked]:border-[#b35f9e] [&:has([data-state=checked])]:border-[#b35f9e] peer-data-[state=checked]:shadow-lg [&:has([data-state=checked])]:shadow-lg hover:shadow-lg hover:scale-[1.03] transition duration-300 hover:cursor-pointer">
-                    <span className="flex items-center gap-1.5">
+      <div className="flex flex-col space-y-1.5 p-6">
+        <h1 className="text-4xl md:text-7xl text-center font-extrabold mb-8 text-[#0C058A]">
+          Projects
+        </h1>
+      </div>
+      <div className="grid grid-flow-row gap-6 p-6 pt-0">
+        <div className="grid gap-6">
+          <RadioGroup
+            defaultValue="snowcast"
+            className="grid grid-flow-row md:grid-rows-2 md:grid-cols-2 gap-4"
+          >
+            {projects.map((name) => (
+              <div>
+                <RadioGroupItem
+                  value={name}
+                  id={name}
+                  className="peer sr-only "
+                  onClick={() => setProject(name)}
+                />
+                <label
+                  htmlFor={name}
+                  className="font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-col items-center justify-between rounded-lg border-2 border-[#DDDBF1] bg-[#DDDBF1] p-4 text-xl md:text-2xl peer-data-[state=checked]:border-[#b35f9e] [&:has([data-state=checked])]:border-[#b35f9e] peer-data-[state=checked]:shadow-lg [&:has([data-state=checked])]:shadow-lg hover:shadow-lg hover:scale-[1.03] transition duration-300 hover:cursor-pointer"
+                >
+                  <span className="flex items-center gap-1.5">
                     {projectInfo[name].title}
                     {projectInfo[name].icon}
-
-                    </span>
-      
-                  </label>
+                  </span>
+                </label>
+              </div>
+            ))}
+          </RadioGroup>
+        </div>
+        <div className="text-center text-base md:text-lg space-y-12 rounded-lg shadow-md p-4 border border-muted-foreground ">
+          <p>{projectInfo[project].description}</p>
+          <div>
+            <p className="text-[#b35f9e]">Languages/Tools:</p>
+            <div className="flex flex-row gap-2 justify-center sm:items-center flex-wrap">
+              {projectInfo[project].languages.map((language) => (
+                <div className="flex items-center text-muted-foreground text-base md:text-lg">
+                  <CircleIcon className="pr-1 h-4 w-4 fill-[#b35f9e] text-[#b35f9e]" />
+                  {language}
                 </div>
               ))}
-            </RadioGroup>
-          </div>
-          <div className="text-center text-base md:text-lg space-y-12 rounded-lg shadow-md p-4 border border-muted-foreground ">
-            <p>{projectInfo[project].description}</p>
-            <div>
-              <p className="text-[#b35f9e]">
-              Languages/Tools:
-                </p>
-              <div className="flex flex-row gap-2 justify-center sm:items-center flex-wrap">
-                {projectInfo[project].languages.map((language) => (
-                  <div className="flex items-center text-muted-foreground text-base md:text-lg">
-                    <CircleIcon className="pr-1 h-4 w-4 fill-[#b35f9e] text-[#b35f9e]" />
-                    {language}
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
