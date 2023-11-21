@@ -97,13 +97,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   .app {
     min-height: 100vh;
     padding-left: 10vh;
     padding-right: 10vh;
     padding-top: 12vh;
-    padding-bottom: 4vh;
+    padding-bottom: 8vh;
     font-family: "Poppins", sans-serif;
   }
 }

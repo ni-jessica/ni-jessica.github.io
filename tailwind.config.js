@@ -13,6 +13,11 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        mobile: {
+          raw: "(orientation: portrait) or (orientation: landscape)",
+        },
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,8 +56,8 @@ module.exports = {
       dropShadow: {
         glow: [
           "0 0px 10px rgba(255,255, 255, 0.3)",
-          "0 0px 10px rgba(255, 255,255, 0.3)"
-        ]
+          "0 0px 10px rgba(255, 255,255, 0.3)",
+        ],
       },
       borderRadius: {
         lg: `var(--radius)`,
