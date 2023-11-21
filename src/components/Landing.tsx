@@ -4,7 +4,7 @@ import Stars from "../images/stars.gif";
 export const Landing = () => {
   return (
     <div className="h-screen justify-center flex flex-col">
-      <div className="grid grid-flow-row">
+      <div className="grid grid-flow-row -mt-9">
         <div>
           <div className="text-4xl text-center sm:text-5xl font-semibold">
             <TypingStep
