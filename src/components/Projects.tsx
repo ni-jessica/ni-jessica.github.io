@@ -118,20 +118,20 @@ export function Projects() {
   const [project, setProject] = useState("snowcast");
 
   return (
-    <div id="projects">
-      <div className="flex flex-col space-y-1.5 p-6">
-        <h1 className="text-4xl md:text-7xl text-center font-extrabold mb-8 text-[#0C058A]">
+    <div id="projects" className="mb-32">
+      <div className="flex flex-col space-y-1.5">
+        <h1 className="text-accent text-4xl md:text-7xl text-center font-extrabold">
           Projects
         </h1>
       </div>
-      <div className="grid grid-flow-row gap-6 p-6 pt-0">
+      <div className="grid grid-flow-row gap-6 pt-8 sm:pt-12 md:pt-16">
         <div className="grid gap-6">
           <RadioGroup
             defaultValue="snowcast"
             className="grid grid-flow-row md:grid-rows-2 md:grid-cols-2 gap-4"
           >
             {projects.map((name) => (
-              <div>
+              <div key={name}>
                 <RadioGroupItem
                   value={name}
                   id={name}
@@ -140,7 +140,7 @@ export function Projects() {
                 />
                 <label
                   htmlFor={name}
-                  className="font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-col items-center justify-between rounded-lg border-2 border-[#DDDBF1] bg-[#DDDBF1] p-4 text-xl md:text-2xl peer-data-[state=checked]:border-[#b35f9e] [&:has([data-state=checked])]:border-[#b35f9e] peer-data-[state=checked]:shadow-lg [&:has([data-state=checked])]:shadow-lg hover:shadow-lg hover:scale-[1.03] transition duration-300 hover:cursor-pointer"
+                  className="font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-col items-center justify-between rounded-lg border-2 border-secondary-foreground bg-secondary-foreground p-4 text-xl md:text-2xl peer-data-[state=checked]:border-secondary [&:has([data-state=checked])]:border-secondary peer-data-[state=checked]:shadow-lg [&:has([data-state=checked])]:shadow-lg  dark:peer-data-[state=checked]:drop-shadow-glow dark:[&:has([data-state=checked])]:drop-shadow-glow hover:shadow-lg hover:scale-[1.03] transition duration-300 hover:cursor-pointer text-gray-900"
                 >
                   <span className="flex items-center gap-1.5">
                     {projectInfo[name].title}
@@ -151,14 +151,14 @@ export function Projects() {
             ))}
           </RadioGroup>
         </div>
-        <div className="text-center text-base md:text-lg space-y-12 rounded-lg shadow-md p-4 border border-muted-foreground ">
+        <div className="text-center text-base md:text-lg space-y-12 rounded-lg shadow-xl p-4 border border-muted-foreground bg-white/10">
           <p>{projectInfo[project].description}</p>
           <div>
-            <p className="text-[#b35f9e]">Languages/Tools:</p>
+            <p className="text-secondary">Languages/Tools:</p>
             <div className="flex flex-row gap-2 justify-center sm:items-center flex-wrap">
               {projectInfo[project].languages.map((language) => (
                 <div className="flex items-center text-muted-foreground text-base md:text-lg">
-                  <CircleIcon className="pr-1 h-4 w-4 fill-[#b35f9e] text-[#b35f9e]" />
+                  <CircleIcon className="pr-1 h-4 w-4 fill-secondary text-secondary" />
                   {language}
                 </div>
               ))}

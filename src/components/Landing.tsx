@@ -6,7 +6,7 @@ export const Landing = () => {
     <div className="h-screen justify-center flex flex-col">
       <div className="grid grid-flow-row">
         <div>
-          <div className="mt-8 text-4xl text-center sm:text-5xl md:mt-0 font-semibold">
+          <div className="text-4xl text-center sm:text-5xl font-semibold">
             <TypingStep
               sequence={[
                 {
@@ -25,6 +25,7 @@ export const Landing = () => {
                   content: "welcome to my website.",
                 },
               ]}
+              cursorColor={"currentColor"}
               typeSpeed={120}
               blinkingSpeed={800}
               cursorThickness={0.075}
@@ -34,7 +35,7 @@ export const Landing = () => {
         </div>
         <div
           id="show"
-          className="mt-4 md:-mt-4 inline-flex max-h-[8rem] md:max-h-[16rem] xl:max-h-[16rem]"
+          className="mt-6 md:mt-1 inline-flex max-h-[8rem] md:max-h-[16rem] xl:max-h-[16rem]"
         >
           <img
             src={Stars}
@@ -49,10 +50,10 @@ export const Landing = () => {
           id="about"
           className="text-center space-y-2 text-base sm:text-lg mb-24"
         >
-          <h1 className="text-4xl md:text-7xl font-extrabold mt-12 md:mt-10 text-[#0C058A] ">
+          <h1 className="text-accent text-4xl md:text-7xl font-extrabold mt-12 md:mt-10 ">
             About Me
           </h1>
-          <div className="md:pt-4">
+          <div className="pt-4">
             <p>
               {"\u2794 "} I'm a junior at Brown University studying
               Applied Math and Computer Science.

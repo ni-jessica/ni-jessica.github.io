@@ -48,6 +48,12 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      dropShadow: {
+        glow: [
+          "0 0px 10px rgba(255,255, 255, 0.3)",
+          "0 0px 10px rgba(255, 255,255, 0.3)"
+        ]
+      },
       borderRadius: {
         lg: `var(--radius)`,
         md: `calc(var(--radius) - 2px)`,
@@ -55,7 +61,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        poppins: ['Poppins', 'serif']
+        poppins: ["Poppins", "serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -74,5 +80,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
-
+};
