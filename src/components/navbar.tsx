@@ -2,7 +2,7 @@ export const Navbar = ({ state, setState }) => {
   return (
     <div className="fixed top-0 left-0 w-full z-10">
       <div id="show">
-        <ul className="flex text-center justify-center items-center bg-accent-foreground px-4 mobile:py-4 sm:p-6 shadow-xl text-sm sm:text-base self-stretch gap-4 sm:gap-8 md:gap-16">
+        <ul className="flex text-center justify-center items-center bg-accent-foreground mobile:p-4 sm:p-6 shadow-xl text-sm sm:text-base self-stretch gap-4 sm:gap-8 md:gap-16">
           <li>
             <a
               className="text-muted dark:text-primary hover:text-muted-foreground  hover:underline hover:underline-offset-2"

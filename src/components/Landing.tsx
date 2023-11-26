@@ -3,7 +3,7 @@ import Stars from "../images/stars.gif";
 
 export const Landing = () => {
   return (
-    <div className="h-screen justify-center flex flex-col mobile:mt-12 mobile:h-full">
+    <div className="h-screen justify-center flex flex-col mobile:my-12 mobile:h-full">
       <div className="grid grid-flow-row">
         <div>
           <div className="text-4xl mobile:text-4xl text-center sm:text-5xl font-semibold">

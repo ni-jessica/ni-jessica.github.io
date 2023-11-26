@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       screens: {
         mobile: {
-          raw: "(orientation: portrait) or (orientation: landscape)",
+          raw: "not all and (orientation: landscape) and (min-width: 768px)",
         },
       },
       colors: {
