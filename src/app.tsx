@@ -4,12 +4,6 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Background } from "./components/Background";
 import { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
-
-function Photos() {
-  window.location.href = process.env.REACT_APP_DIGITALS;
-  return null;
-}
 
 export const App = () => {
   // refresh brings user back to top of page
@@ -43,10 +37,6 @@ export const App = () => {
       <div className="align-bottom text-center">
         <p>created by Jessica Ni | updated November 2023</p>
       </div>
-
-      <Routes>
-        <Route path="/photos" element={<Photos />} />
-      </Routes>
     </body>
   );
 };
