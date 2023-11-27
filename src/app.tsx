@@ -4,6 +4,12 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Background } from "./components/Background";
 import { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+
+function Photos() {
+  window.location.href = process.env.REACT_APP_DIGITALS;
+  return null;
+}
 
 export const App = () => {
   // refresh brings user back to top of page
@@ -36,10 +42,11 @@ export const App = () => {
       <Contact />
       <div className="align-bottom text-center">
         <p>created by Jessica Ni | updated November 2023</p>
-        <a href={process.env.REACT_APP_DIGITALS}>
-          <p className="pt-4">{`\u{1F4F8}`}</p>
-        </a>
       </div>
+
+      <Routes>
+        <Route path="/photos" element={<Photos />} />
+      </Routes>
     </body>
   );
 };
