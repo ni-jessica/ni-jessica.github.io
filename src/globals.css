@@ -2,52 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
+/* color themes */
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 96.1%;
     --foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --muted: 215.4 16.3% 46.9%;
 
     --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
 
-    --secondary: 315 36% 54%;
+    --secondary: 313 72% 48%;
     --secondary-foreground: 245 44% 90%;
 
-    --accent: 243 93% 28%;
-    --accent-foreground: 244 93% 18%;
-
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 245 34% 45%;
 
     --ring: 215 20.2% 65.1%;
 
@@ -55,40 +23,46 @@
   }
 
   .dark {
-    --background: 224 71% 4%;
+    --background: 223 47% 11%;
     --foreground: 213 31% 96%;
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 68%;
-
-    --accent: 245 34% 45%;
-    --accent-foreground: 245 34% 35%;
-
-    --popover: 224 71% 4%;
-    --popover-foreground: 215 20.2% 65.1%;
-
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
-
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
+    --muted: 215.4 16.3% 68%;
 
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
+  }
 
+  .purple {
+    --accent: 245 34% 55%;
     --secondary: 313 72% 48%;
     --secondary-foreground: 245 44% 90%;
+  }
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+  .red {
+    --accent: 349.3 96.2% 30.8%;
+    --secondary: 317 42% 52%;
+    --secondary-foreground: 218 0% 90%;
+  }
 
-    --ring: 216 34% 17%;
+  .green {
+    --accent: 180 65% 27%;
+    --secondary: 164 100% 38%;
+    --secondary-foreground: 216 44% 85%;
+  }
 
-    --radius: 0.5rem;
+  .blue {
+    --accent: 229 83% 60%;
+    --secondary: 200 100% 52%;
+    --secondary-foreground: 221 100% 92%;
+  }
+
+  .coral {
+    --accent: 354 100% 71%;
+    --secondary: 40 94% 52%;
+    --secondary-foreground: 226 21% 88%;
   }
 
   body {
-    @apply bg-muted text-foreground;
+    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -100,12 +74,21 @@
 
   .app {
     min-height: 100vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    padding-top: 12vh;
-    padding-bottom: 8vh;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     font-family: "Poppins", sans-serif;
+    cursor: default;
   }
+
+  h1 {
+    @apply text-accent text-2xl md:text-3xl font-bold;
+  }
+  
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -115,18 +98,4 @@
   }
 }
 
-[id]::before {
-  content: "";
-  display: block;
-  height: 80px;
-  margin-top: -80px;
-  visibility: hidden;
-}
 
-#show {
-  opacity: 0;
-  animation: fadeIn 3s forwards;
-  animation-delay: 8s;
-  -webkit-animation: fadeIn 3s forwards;
-  -webkit-animation-delay: 8s;
-}

@@ -1,3 +1,3 @@
-my personal portfolio designed and created from scratch using typescript, react, html, and css. dns configured with squarespace.
+This is my personal website designed and created from scratch using Typescript, React, HTML, and CSS. DNS configurations done through Squarespace.
 
-responsive, works on mobile, and supports dark mode!
+Responsive, mobile-friendly, and supports dark mode + color themes!
