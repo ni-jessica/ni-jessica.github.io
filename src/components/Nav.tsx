@@ -109,7 +109,7 @@ export const Nav = (props: CustomizationProps) => {
 
         <div
           className={`${
-            open ? "opacity-100" : "opacity-0"
+            open ? "opacity-100" : "opacity-0 pointer-events-none"
           } absolute w-64 right-0 z-10 mt-2 rounded-lg bg-white/80 dark:bg-muted/60 backdrop-blur-xl drop-shadow-2xl shadow-2xl transition-all duration-300 `}
           id="menu"
           aria-orientation="vertical"
