@@ -30,9 +30,6 @@ export const Background = () => {
                   <OpenInNewOutlinedIcon className="-translate-y-0.5" />
                 </span>
               </a>
-              <span className="-translate-y-0.5 bg-secondary-foreground text-accent text-base md:text-lg font-semibold me-2 px-2.5 py-0.5 rounded ms-3 drop-shadow-none">
-                Incoming
-              </span>
             </div>
 
             <p className="block mb-2 text-base md:text-lg font-normal leading-none ">
@@ -41,6 +38,10 @@ export const Background = () => {
             <time className="block mb-2 text-base md:text-lg font-normal leading-none">
               May 2024 - August 2024
             </time>
+
+            <p className="text-base md:text-lg font-normal text-muted">
+              Led project that integrated AI tooling and cross-team features in nearline processing pipeline to improve comment notification quality for users. Used in-house technologies to log and display metric data.
+            </p>
           </li>
           <li className="mb-16 ms-7 md:ms-9">
             <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight">

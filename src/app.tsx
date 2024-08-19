@@ -43,7 +43,7 @@ export const App = () => {
             <p>
               created with{" "}
               <FavoriteIcon className="text-secondary -translate-y-0.5 scale-75" />{" "}
-              by Jessica Ni &nbsp;|&nbsp; updated December 2023
+              by Jessica Ni &nbsp;|&nbsp; updated August 2024
             </p>
           </div>
         </div>
