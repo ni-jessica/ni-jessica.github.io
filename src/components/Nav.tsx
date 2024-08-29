@@ -27,7 +27,7 @@ export const Nav = (props: CustomizationProps) => {
           I'm <span className="font-bold">Jessica Ni</span> , <br />
           welcome to my website.
         </p>
-        <div className="text-xl flex flex-col md:pt-12 md:space-y-4">
+        <div className="text-xl flex flex-col md:space-y-2">
           <a
             className="hover:text-accent group hidden md:inline-flex"
             href="#about"
