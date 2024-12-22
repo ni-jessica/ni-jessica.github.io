@@ -9,7 +9,7 @@ export const ContactInfo = () => {
           url="https://www.linkedin.com/in/ni-jessica/"
           fgColor="currentColor"
           bgColor="transparent"
-          className="text-accent hover:scale-110 transition duration-300"
+          className="text-accent hover:scale-125 transition duration-300"
         />
       </li>
       <li>
@@ -18,7 +18,7 @@ export const ContactInfo = () => {
           url="https://github.com/ni-jessica"
           fgColor="currentColor"
           bgColor="transparent"
-          className="text-accent hover:scale-110 transition duration-300"
+          className="text-accent hover:scale-125 transition duration-300"
         />
       </li>
       <li>
@@ -27,7 +27,7 @@ export const ContactInfo = () => {
           url="mailto:jessica_ni@brown.edu"
           fgColor="currentColor"
           bgColor="transparent"
-          className="text-accent hover:scale-110 transition duration-300"
+          className="text-accent hover:scale-125 transition duration-300"
         />
       </li>
     </ul>

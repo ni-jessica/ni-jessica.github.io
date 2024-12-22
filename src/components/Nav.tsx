@@ -22,7 +22,10 @@ export const Nav = (props: CustomizationProps) => {
   return (
     <div className="flex md:fixed md:h-screen md:w-[30%]">
       <div className="space-y-8 text-2xl md:text-3xl">
-        <p> Hello! {"\u{1F44B}"}</p>
+        <div className="inline-flex space-x-2">
+          <p>Hello!</p>
+          <p className="hover:animate-wiggle">{"\u{1F44B}"}</p>
+        </div>
         <p>
           I'm <span className="font-bold">Jessica Ni</span> , <br />
           welcome to my website.

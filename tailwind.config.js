@@ -4,6 +4,13 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
+  safelist: [
+    "dark-purple",
+    "dark-blue",
+    "dark-green",
+    "dark-red",
+    "dark-coral"
+  ],
   theme: {
     container: {
       center: true,
@@ -58,10 +65,15 @@ module.exports = {
         fadeIn: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 }
-        }
+        },
+        wiggle: {
+          '25%, 75%': { transform: 'rotate(-15deg)' },
+          '50%': { transform: 'rotate(15deg)' },
+        },
       }),
       animation: {
-        "fade-in": "fadeIn 0.15s ease-in-out"
+        "fade-in": "fadeIn 0.15s ease-in-out",
+        "wiggle": 'wiggle 0.8s ease-in-out',
       },
     },
   },

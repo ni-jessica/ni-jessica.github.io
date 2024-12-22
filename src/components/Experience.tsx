@@ -2,11 +2,16 @@ import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
 
 export const Background = () => {
   return (
-    <div id="experience" className="scroll-mt-[8vh] md:scroll-mt-[10vh]">
+    <div
+      id="experience"
+      className="scroll-mt-[8vh] md:scroll-mt-[10vh]"
+    >
       <h1>Experience</h1>
       <div className="pl-4 pt-8">
         <ol className="relative border-s-2 border-muted">
-          <li className="mb-16 ms-7 md:ms-9">
+          <li
+            className="mb-16 ms-7 md:ms-9"
+          >
             <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +45,10 @@ export const Background = () => {
             </time>
 
             <p className="text-base md:text-lg font-normal text-muted">
-              Led project that integrated AI tooling and cross-team features in nearline processing pipeline to improve comment notification quality for users. Used in-house technologies to log and display metric data.
+              Led project that integrated AI tooling and cross-team
+              features in nearline processing pipeline to improve
+              comment notification quality for users. Used in-house
+              technologies to log and display metric data.
             </p>
           </li>
           <li className="mb-16 ms-7 md:ms-9">
@@ -57,7 +65,7 @@ export const Background = () => {
               </svg>
             </span>
             <a
-              href="https://meetkai.com/metaverse"
+              href="https://meetkai.com/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-secondary dark:hover:drop-shadow-glowLight"
@@ -97,7 +105,7 @@ export const Background = () => {
               </svg>
             </span>
             <a
-              href="https://meetkai.com/vip"
+              href="https://meetkai.com/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-secondary dark:hover:drop-shadow-glowLight"

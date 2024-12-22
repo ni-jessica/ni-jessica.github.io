@@ -21,7 +21,9 @@ export const App = () => {
   const [colorTheme, setColorTheme] = useState<string>("purple");
 
   return (
-    <body className={`app ${darkMode && "dark"} ${colorTheme}`}>
+    <main
+      className={`app ${darkMode ? `dark dark-${colorTheme}` : colorTheme}`}
+    >
       <div className="md:grid md:grid-cols-[40%,60%] md:gap-14">
         <div className="md:border-r-[1px] md:border-muted/10">
           <Nav
@@ -43,11 +45,11 @@ export const App = () => {
             <p>
               created with{" "}
               <FavoriteIcon className="text-secondary -translate-y-0.5 scale-75" />{" "}
-              by Jessica Ni &nbsp;|&nbsp; updated August 2024
+              by Jessica Ni &nbsp;|&nbsp; updated December 2024
             </p>
           </div>
         </div>
       </div>
-    </body>
+    </main>
   );
 };

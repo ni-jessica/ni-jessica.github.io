@@ -13,10 +13,10 @@ export interface CustomizationProps {
 
 export const colors: Record<string, string> = {
   purple: "#6c65b3",
-  coral: "#ff6b7a",
+  coral: "#D75B69",
   green: "#187272",
-  blue: "#4361ee",
-  red: "#9a031e",
+  blue: "#000AFF",
+  red: "#da1028",
 };
 
 export const Customizations = (props: CustomizationProps) => {

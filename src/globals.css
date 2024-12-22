@@ -15,8 +15,6 @@
     --secondary: 313 72% 48%;
     --secondary-foreground: 245 44% 90%;
 
-    --accent: 245 34% 45%;
-
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
@@ -33,35 +31,64 @@
 
   .purple {
     --accent: 245 34% 55%;
-    --secondary: 313 72% 48%;
+    --secondary: 313 72% 44%;
+    --secondary-foreground: 245 44% 90%;
+  }
+
+  .dark-purple {
+    --accent: 243 34% 61%;
+    --secondary: 313 72% 54%;
     --secondary-foreground: 245 44% 90%;
   }
 
   .red {
-    --accent: 349.3 96.2% 30.8%;
-    --secondary: 317 42% 52%;
-    --secondary-foreground: 218 0% 90%;
+    --accent: 353 86% 46%;
+    --secondary: 307 50% 40%;
+    --secondary-foreground: 339 52% 94%;
+  }
+
+  .dark-red {
+    --accent: 353 86% 58%;
+    --secondary: 282 67% 61%;
+    --secondary-foreground: 339 52% 94%;
   }
 
   .green {
-    --accent: 180 65% 27%;
-    --secondary: 164 100% 38%;
+    --accent: 176 100% 19%;
+    --secondary: 176 96% 31%;
     --secondary-foreground: 216 44% 85%;
   }
 
+  .dark-green {
+    --accent: 176 100% 28%;
+    --secondary: 149 56% 53%;
+    --secondary-foreground: 216 44% 85%;
+  }
   .blue {
-    --accent: 229 83% 60%;
-    --secondary: 200 100% 52%;
+    --accent: 238 100% 50%;
+    --secondary: 212 92% 45%;
+    --secondary-foreground: 221 100% 92%;
+  }
+
+  .dark-blue {
+    --accent: 228 100% 66%;
+    --secondary: 185 84% 52%;
     --secondary-foreground: 221 100% 92%;
   }
 
   .coral {
-    --accent: 354 100% 71%;
-    --secondary: 40 94% 52%;
-    --secondary-foreground: 226 21% 88%;
+    --accent: 353 61% 60%;
+    --secondary: 33 84% 51%;
+    --secondary-foreground: 9 100% 92%;
   }
 
-  body {
+  .dark-coral {
+    --accent: 353 61% 64%;
+    --secondary: 33 84% 54%;
+    --secondary-foreground: 9 80% 92%;
+  }
+
+  main {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     margin: 0;
@@ -86,9 +113,8 @@
   }
 
   h1 {
-    @apply text-accent text-2xl md:text-3xl font-bold;
+    @apply text-accent text-2xl md:text-3xl font-bold tracking-wide;
   }
-  
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -97,5 +123,3 @@
     padding-left: 8vw;
   }
 }
-
-
