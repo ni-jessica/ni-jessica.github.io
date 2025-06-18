@@ -52,13 +52,6 @@ const projectInfo: Record<string, ProjectProps> = {
     languages: ["C"],
     image: Cache,
   },
-  weensy: {
-    title: "Weensy OS",
-    description:
-      "Integrates virtual memory architecture into kernel code, including pagetables and fork process isolation, to double the memory capacity of a miniature operating system.",
-    languages: ["C++"],
-    image: Weensy,
-  },
   dorms: {
     title: "Dorms at Brown",
     description:
@@ -74,7 +67,6 @@ const projects = [
   "pdl",
   "iptcp",
   "caching",
-  "weensy",
   "dorms",
 ];
 
@@ -90,7 +82,7 @@ export function Projects() {
           target="_blank"
           rel="noreferrer"
           href={project.github}
-          className="text-xl md:text-2xl font-semibold inline-flex items-center text-secondary"
+          className="text-xl md:text-2xl font-semibold inline-flex items-center hover:text-accent"
         >
           {project.title}
           <span className="ml-3 -translate-y-0.5">
@@ -104,7 +96,7 @@ export function Projects() {
           target="_blank"
           rel="noreferrer"
           href={project.link}
-          className="text-xl md:text-2xl font-semibold inline-flex items-center text-secondary"
+          className="text-xl md:text-2xl font-semibold inline-flex items-center hover:text-accent"
         >
           {project.title}
           <span className="ml-2 -translate-y-[1px]">
@@ -114,7 +106,7 @@ export function Projects() {
       );
     } else {
       return (
-        <div className="text-xl md:text-2xl font-semibold inline-flex items-center text-secondary">
+        <div className="text-xl md:text-2xl font-semibold inline-flex items-center hover:text-accent">
           {project.title}
         </div>
       );
@@ -159,7 +151,7 @@ export function Projects() {
                       className="flex items-center text-muted text-base md:text-lg "
                       key={language}
                     >
-                      <CircleIcon className="pr-1 h-4 w-4 text-secondary" />
+                      <CircleIcon className="pr-1 h-4 w-4 text-accent" />
                       {language}
                     </div>
                   ))}

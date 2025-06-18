@@ -9,10 +9,32 @@ export const Background = () => {
       <h1>Experience</h1>
       <div className="pl-4 pt-8">
         <ol className="relative border-s-2 border-muted">
-          <li
-            className="mb-16 ms-7 md:ms-9"
-          >
-            <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight">
+          <li className="mb-16 ms-7 md:ms-9">
+            <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight border-2 border-accent dark:border-none font-bold text-accent">
+              <span className="scale-150">B</span>
+            </span>
+            <div className="flex items-center text-xl md:text-2xl font-semibold">
+              <a
+                href="https://www.bloomberg.com/company/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-accent dark:hover:drop-shadow-glowLight"
+              >
+                Bloomberg
+                <span className="px-2">
+                  <OpenInNewOutlinedIcon className="-translate-y-0.5" />
+                </span>
+              </a>
+            </div>
+            <p className="block mb-2 text-base md:text-lg font-normal leading-none ">
+              Software Engineer
+            </p>
+            <time className="block mb-2 text-base md:text-lg font-normal leading-none">
+              July 2025 - Present
+            </time>
+          </li>
+          <li className="mb-16 ms-7 md:ms-9">
+            <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight border-2 border-accent dark:border-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 fill-accent"
@@ -28,7 +50,7 @@ export const Background = () => {
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-secondary dark:hover:drop-shadow-glowLight"
+                className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-accent dark:hover:drop-shadow-glowLight"
               >
                 LinkedIn
                 <span className="px-2">
@@ -52,7 +74,7 @@ export const Background = () => {
             </p>
           </li>
           <li className="mb-16 ms-7 md:ms-9">
-            <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight">
+            <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight border-2 border-accent dark:border-none">
               <svg
                 className="w-5 h-5 text-accent"
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +90,7 @@ export const Background = () => {
               href="https://meetkai.com/"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-secondary dark:hover:drop-shadow-glowLight"
+              className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-accent dark:hover:drop-shadow-glowLight"
             >
               Meetkai
               <span className="px-2">
@@ -84,15 +106,13 @@ export const Background = () => {
 
             <p className="text-base md:text-lg font-normal text-muted">
               Engaged in design, engineering, and testing processes to
-              create components for several Meetkai Metaverse products
-              based off of client deliverables. Also streamlined
-              end-to-end integration testing and enhanced codebase by
-              refactoring using separation of concerns and dependency
-              injections.
+              create components based off of client deliverables. Also
+              streamlined end-to-end integration testing and enhanced
+              codebase by refactoring tech debt.
             </p>
           </li>
           <li className="ms-7 md:ms-9">
-            <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight">
+            <span className="absolute flex items-center justify-center w-9 h-9 bg-secondary-foreground rounded-full -start-5 dark:drop-shadow-glowLight border-2 border-accent dark:border-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -108,7 +128,7 @@ export const Background = () => {
               href="https://meetkai.com/"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-secondary dark:hover:drop-shadow-glowLight"
+              className="flex items-center pt-1 md:pt-0.5 mb-2 text-xl md:text-2xl font-semibold hover:text-accent dark:hover:drop-shadow-glowLight"
             >
               Meetkai
               <span className="px-2">
@@ -122,10 +142,10 @@ export const Background = () => {
               May 2022 - December 2022
             </time>
             <p className="text-base md:text-lg font-normal text-muted">
-              Owned and deployed web services for client cloud
-              console. Developed first iterations of user dashboard
-              and logging pages by implementing UI/UX design and
-              connecting user events to identity store schemas.
+              Owned and deployed web services for B2B cloud console.
+              Developed first iterations of user dashboard and logging
+              pages by implementing UI/UX design and connecting user
+              events to identity store schemas.
             </p>
           </li>
         </ol>

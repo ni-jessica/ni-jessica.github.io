@@ -34,7 +34,7 @@ export const App = () => {
             mode={"nav"}
           />
         </div>
-        <div className="space-y-24 pt-8 md:pt-0 md:space-y-36">
+        <div className="space-y-24 pt-16 md:pt-0 md:space-y-28">
           <About />
           <Background />
           <Projects />
@@ -44,8 +44,8 @@ export const App = () => {
           >
             <p>
               created with{" "}
-              <FavoriteIcon className="text-secondary -translate-y-0.5 scale-75" />{" "}
-              by Jessica Ni &nbsp;|&nbsp; updated December 2024
+              <FavoriteIcon className="text-accent -translate-y-0.5 scale-75" />{" "}
+              by Jessica Ni &nbsp;|&nbsp; updated June 2025
             </p>
           </div>
         </div>

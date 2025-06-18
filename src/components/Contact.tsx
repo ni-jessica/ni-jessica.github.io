@@ -2,7 +2,7 @@ import { SocialIcon } from "react-social-icons";
 
 export const ContactInfo = () => {
   return (
-    <ul className="-translate-x-3.5 flex flex-row">
+    <ul className="-mt-4 md:mt-0 md:-translate-x-3.5 flex flex-row justify-center md:justify-start">
       <li>
         <SocialIcon
           target="_blank"

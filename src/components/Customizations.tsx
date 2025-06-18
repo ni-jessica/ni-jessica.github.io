@@ -12,11 +12,11 @@ export interface CustomizationProps {
 }
 
 export const colors: Record<string, string> = {
-  purple: "#6c65b3",
-  coral: "#D75B69",
-  green: "#187272",
-  blue: "#000AFF",
-  red: "#da1028",
+  purple: "#8D60E2",
+  coral: "#d96371",
+  green: "#04af8d",
+  blue: "#3676f7",
+  red: "#ed122b",
 };
 
 export const Customizations = (props: CustomizationProps) => {
@@ -40,7 +40,7 @@ export const Customizations = (props: CustomizationProps) => {
           />
           <label
             htmlFor={`${props.mode}-dark`}
-            className="w-3 h-3 md:w-6 md:h-6 opacity-70 flex items-center justify-center rounded-full p-4 md:p-3.5 lg:p-4 border-2 border-transparent bg-secondary-foreground peer-data-[state=checked]:scale-105 [&:has([data-state=checked])]:scale-105 md:peer-data-[state=checked]:scale-110 md:[&:has([data-state=checked])]:scale-110 peer-data-[state=checked]:border-secondary [&:has([data-state=checked])]:border-secondary peer-data-[state=checked]:drop-shadow-xl [&:has([data-state=checked])]:drop-shadow-xl dark:peer-data-[state=checked]:drop-shadow-glow dark:[&:has([data-state=checked])]:drop-shadow-glow peer-data-[state=checked]:opacity-100 [&:has([data-state=checked])]:opacity-100 hover:shadow-xl hover:scale-105 transition duration-300 hover:cursor-pointer text-accent"
+            className="w-3 h-3 md:w-6 md:h-6 opacity-70 flex items-center justify-center rounded-full p-4 md:p-3.5 lg:p-4 border-2 border-transparent bg-secondary-foreground peer-data-[state=checked]:scale-105 [&:has([data-state=checked])]:scale-105 md:peer-data-[state=checked]:scale-110 md:[&:has([data-state=checked])]:scale-110 peer-data-[state=checked]:border-accent [&:has([data-state=checked])]:border-accent peer-data-[state=checked]:drop-shadow-xl [&:has([data-state=checked])]:drop-shadow-xl dark:md:peer-data-[state=checked]:drop-shadow-glow dark:md:[&:has([data-state=checked])]:drop-shadow-glow peer-data-[state=checked]:opacity-100 [&:has([data-state=checked])]:opacity-100 hover:shadow-xl hover:scale-105 transition duration-300 hover:cursor-pointer text-accent"
           >
             <DarkModeOutlinedIcon />
           </label>
@@ -54,7 +54,7 @@ export const Customizations = (props: CustomizationProps) => {
           />
           <label
             htmlFor={`${props.mode}-light`}
-            className="w-3 h-3 md:w-6 md:h-6 opacity-70 flex items-center justify-center rounded-full p-4 md:p-3.5 lg:p-4 border-2 border-transparent bg-secondary-foreground peer-data-[state=checked]:scale-105 [&:has([data-state=checked])]:scale-105 md:peer-data-[state=checked]:scale-110 md:[&:has([data-state=checked])]:scale-110 peer-data-[state=checked]:border-secondary [&:has([data-state=checked])]:border-secondary peer-data-[state=checked]:drop-shadow-xl [&:has([data-state=checked])]:drop-shadow-xl dark:peer-data-[state=checked]:drop-shadow-glow dark:[&:has([data-state=checked])]:drop-shadow-glow peer-data-[state=checked]:opacity-100 [&:has([data-state=checked])]:opacity-100 hover:shadow-xl hover:scale-105 transition duration-300 hover:cursor-pointer text-accent"
+            className="w-3 h-3 md:w-6 md:h-6 opacity-70 flex items-center justify-center rounded-full p-4 md:p-3.5 lg:p-4 border-2 border-transparent bg-secondary-foreground peer-data-[state=checked]:scale-105 [&:has([data-state=checked])]:scale-105 md:peer-data-[state=checked]:scale-110 md:[&:has([data-state=checked])]:scale-110 peer-data-[state=checked]:border-accent [&:has([data-state=checked])]:border-accent peer-data-[state=checked]:drop-shadow-xl [&:has([data-state=checked])]:drop-shadow-xl dark:md:peer-data-[state=checked]:drop-shadow-glow dark:md:[&:has([data-state=checked])]:drop-shadow-glow peer-data-[state=checked]:opacity-100 [&:has([data-state=checked])]:opacity-100 hover:shadow-xl hover:scale-105 transition duration-300 hover:cursor-pointer text-accent"
           >
             <LightModeOutlinedIcon />
           </label>
@@ -76,7 +76,7 @@ export const Customizations = (props: CustomizationProps) => {
             />
             <label
               htmlFor={`${props.mode}-${key}`}
-              className="opacity-70 flex flex-col items-center justify-between rounded-full p-4 md:p-3.5 lg:p-4 border-2 border-transparent peer-data-[state=checked]:scale-105 [&:has([data-state=checked])]:scale-105 md:peer-data-[state=checked]:scale-110 md:[&:has([data-state=checked])]:scale-110 peer-data-[state=checked]:border-secondary [&:has([data-state=checked])]:border-secondary peer-data-[state=checked]:drop-shadow-xl [&:has([data-state=checked])]:drop-shadow-xl  dark:peer-data-[state=checked]:drop-shadow-glow dark:[&:has([data-state=checked])]:drop-shadow-glow peer-data-[state=checked]:opacity-100 [&:has([data-state=checked])]:opacity-100 hover:shadow-xl hover:scale-105 transition duration-300 hover:cursor-pointer"
+              className="opacity-90 contrast-75 flex flex-col items-center justify-between rounded-full p-4 md:p-3.5 lg:p-4 border-2 border-transparent peer-data-[state=checked]:scale-105 [&:has([data-state=checked])]:scale-105 md:peer-data-[state=checked]:scale-110 md:[&:has([data-state=checked])]:scale-110 peer-data-[state=checked]:drop-shadow-xl [&:has([data-state=checked])]:drop-shadow-xl  dark:peer-data-[state=checked]:drop-shadow-glow dark:[&:has([data-state=checked])]:drop-shadow-glow peer-data-[state=checked]:opacity-100 [&:has([data-state=checked])]:opacity-100 peer-data-[state=checked]:contrast-100 [&:has([data-state=checked])]:contrast-100 peer-data-[state=checked]:border-accent [&:has([data-state=checked])]:border-accent hover:shadow-2xl hover:scale-105 transition duration-300 hover:cursor-pointer"
               style={{ background: value }}
             />
           </div>

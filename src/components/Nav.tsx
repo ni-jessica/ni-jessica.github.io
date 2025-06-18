@@ -20,16 +20,11 @@ export const Nav = (props: CustomizationProps) => {
   document.addEventListener("mousedown", close);
 
   return (
-    <div className="flex md:fixed md:h-screen md:w-[30%]">
+    <div className="flex md:fixed md:h-screen md:w-[30%] justify-center md:justify-start">
       <div className="space-y-8 text-2xl md:text-3xl">
-        <div className="inline-flex space-x-2">
-          <p>Hello!</p>
-          <p className="hover:animate-wiggle">{"\u{1F44B}"}</p>
+        <div className="-mt-1 inline-flex space-x-2 font-bold  text-4xl lg:text-5xl xl:text-6xl">
+         JESSICA NI
         </div>
-        <p>
-          I'm <span className="font-bold">Jessica Ni</span> , <br />
-          welcome to my website.
-        </p>
         <div className="text-xl flex flex-col md:space-y-2">
           <a
             className="hover:text-accent group hidden md:inline-flex"
@@ -103,8 +98,8 @@ export const Nav = (props: CustomizationProps) => {
       >
         <button
           className={`${
-            open ? "text-secondary" : "text-primary"
-          } bg-secondary-foreground/40 backdrop-blur-xl rounded-lg p-1 drop-shadow-xl`}
+            open ? "text-secondary-accent" : "text-primary"
+          } bg-secondary-foreground backdrop-blur-xl rounded-lg p-1 drop-shadow-xl`}
           onClick={() => setOpen((open) => !open)}
         >
           <MenuIcon />
@@ -113,7 +108,7 @@ export const Nav = (props: CustomizationProps) => {
         <div
           className={`${
             open ? "opacity-100" : "opacity-0 pointer-events-none"
-          } absolute w-64 right-0 z-10 mt-2 rounded-lg bg-white/80 dark:bg-muted/60 backdrop-blur-xl drop-shadow-2xl shadow-2xl transition-all duration-300 `}
+          } absolute w-64 right-0 z-10 mt-2 rounded-lg bg-white/80 dark:bg-muted/75 backdrop-blur-xl drop-shadow-2xl shadow-2xl transition-all duration-300 `}
           id="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"

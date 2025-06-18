@@ -10,7 +10,7 @@
 
     --muted: 215.4 16.3% 46.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 222.2 47.4% 12%;
 
     --secondary: 313 72% 48%;
     --secondary-foreground: 245 44% 90%;
@@ -30,62 +30,62 @@
   }
 
   .purple {
-    --accent: 245 34% 55%;
-    --secondary: 313 72% 44%;
+    --accent: 261 69% 58%;
+    --secondary: 261 69% 58%;
     --secondary-foreground: 245 44% 90%;
   }
 
   .dark-purple {
-    --accent: 243 34% 61%;
-    --secondary: 313 72% 54%;
-    --secondary-foreground: 245 44% 90%;
+    --accent: 261 69% 76%;
+    --secondary: 261 69% 76%;
+    --secondary-foreground: 245 44% 32%;
   }
 
   .red {
-    --accent: 353 86% 46%;
+    --accent: 353 86% 42%;
     --secondary: 307 50% 40%;
     --secondary-foreground: 339 52% 94%;
   }
 
   .dark-red {
     --accent: 353 86% 58%;
-    --secondary: 282 67% 61%;
-    --secondary-foreground: 339 52% 94%;
+    --secondary: 339 52% 94%;
+    --secondary-foreground: 339 52% 19%;
   }
 
   .green {
-    --accent: 176 100% 19%;
+    --accent: 176 96% 31%;
     --secondary: 176 96% 31%;
-    --secondary-foreground: 216 44% 85%;
+    --secondary-foreground: 135 59% 92%;
   }
 
   .dark-green {
-    --accent: 176 100% 28%;
+    --accent: 166 100% 41%;
     --secondary: 149 56% 53%;
-    --secondary-foreground: 216 44% 85%;
+    --secondary-foreground: 166 100% 10%;
   }
   .blue {
-    --accent: 238 100% 50%;
+    --accent: 212 92% 45%;
     --secondary: 212 92% 45%;
     --secondary-foreground: 221 100% 92%;
   }
 
   .dark-blue {
     --accent: 228 100% 66%;
-    --secondary: 185 84% 52%;
-    --secondary-foreground: 221 100% 92%;
+    --secondary: 221 100% 82%;
+    --secondary-foreground: 221 100% 10%;
   }
 
   .coral {
     --accent: 353 61% 60%;
     --secondary: 33 84% 51%;
-    --secondary-foreground: 9 100% 92%;
+    --secondary-foreground: 9 100% 94%;
   }
 
   .dark-coral {
     --accent: 353 61% 64%;
-    --secondary: 33 84% 54%;
-    --secondary-foreground: 9 80% 92%;
+    --secondary: 353 61% 6%;
+    --secondary-foreground: 9 80% 12%;
   }
 
   main {
